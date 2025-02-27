@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <script src="task.js"></script>
+    <div style="text-align: center; width: auto; margin:225px;">
+        <div style="border: solid 2px black; width: 600px; height:fit-content; margin: auto; padding: 15px;">
+            <div id="div1" style="background-color: green; padding: 10px; font-weight: bold; margin: 10px;">
+                BASIC CALCULATION USING JAVASCRIPT
+            </div>
+            <center>
+                <table border="1">
+                    <tr>
+                        <td>Input 01</td>
+                        <td><input type="text" id="input1"></td>
+                    </tr>
+                    <tr>
+                        <td>Input 02</td>
+                        <td><input type="text" id="input2"></td>
+                    </tr>
+                    <tr>
+                        <td>Input 03</td>
+                        <td><input type="text" id="input3"></td>
+                    </tr>
+                    <tr>
+                        <td>Operation</td>
+                        <td>
+                            <select id="method">
+                                <option value="1">ADD</option>
+                                <option value="2">SUBTRACT</option>
+                                <option value="3">DIVIDE</option>
+                                <option value="4">MULTIPLY</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ANSWER</td>
+                        <td><input id="answer" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="OK" onclick="calculate()"></td>
+                        <td><input type="button" value="RESET" onclick="reset()"></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

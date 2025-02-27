@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Click Me</button>
+
+    <script>
+        function myFunction() {
+            let txt = "";
+            let number1 = parseFloat(prompt("Enter the first No:", "0"));
+            let number2 = parseFloat(prompt("Enter the second No:", "0"));
+
+            if (isNaN(number1) || isNaN(number2)) {
+                txt = "Invalid input.";
+            } else {
+                txt = "Total: " + (number1 + number2);
+            }
+
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
